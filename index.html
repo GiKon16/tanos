@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Tanos</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="logo-container">
+                <img class="logo" src="assets/images/logo.png" alt="">
+            </div>
+            <nav class="navbar">
+                <a class="navbar-link" href="#" id="menu-navbar">
+                    <span>Меню</span>
+                    <nav class="prenavbar" id="menu-prenavbar">
+                        <div class="button-close-prenavbar" id="menu-prenavbar-close-button">
+                            <img class="close-img" src="assets/images/close.png" alt="">
+                        </div>
+                        <a class="prenavbar-link" href="#">Услуги</a>
+                        <a class="prenavbar-link" href="#">Статьи</a>
+                        <a class="prenavbar-link" href="#">Вакансии</a>
+                        <a class="prenavbar-link" href="#">Франшиза</a>
+                    </nav>
+                </a>
+                <a class="navbar-link" href="#">Портфолио</a>
+                <a class="navbar-link" href="#">Цены</a>
+                <a class="navbar-link" href="#">Схема работы</a>
+                <a class="navbar-link" href="#">Отзывы</a>
+                <a class="navbar-link" href="#">Контакты</a>
+                <a class="navbar-link" href="#">Гарантия</a>
+            </nav>
+            <div class="button-burger" id="button-burger">
+                <span class="button-burger-line" id="button-burger-line"></span>
+            </div>
+            <div class="burger" id="burger">
+                <div class="burger-content">
+                    <div class="logo-burger-container">
+                        <img class="logo" src="assets/images/logo.png" alt="">
+                    </div>
+                    <nav class="navbar-burger">
+                        <a class="navbar-link burger-link" href="#">Меню</a>
+                        <a class="navbar-link burger-link" href="#">Портфолио</a>
+                        <a class="navbar-link burger-link" href="#">Цены</a>
+                        <a class="navbar-link burger-link" href="#">Схема работы</a>
+                        <a class="navbar-link burger-link" href="#">Отзывы</a>
+                        <a class="navbar-link burger-link" href="#">Контакты</a>
+                        <a class="navbar-link burger-link" href="#">Гарантия</a>
+                    </nav>
+                    <button class="button-call button-burger-call">Обратный звонок</button>
+                </div>
+            </div>
+            <button class="button-call">Обратный звонок</button>
+        </header>
+        <main class="main">
+            <div class="info">
+                <h1 class="info-title">Ремонт под ключ от 2900 руб/м<sup class="sup">2</sup>.</h1>
+                <div class="description">
+                    <p class="description-text">
+                        При заказе ремонта делаем </br>
+                        дизайн-проект в подарок
+                    </p>
+                    <div class="text-line"></div>
+                </div>             
+                <div class="advantages">
+                    <div class="advantage">
+                        <div class="truck-container">
+                            <img src="assets/images/checked-truck.png" alt="">
+                        </div>
+                        <p class="advantage-text">
+                            Бесплатный выезд в день обращения
+                        </p>
+                    </div>
+                    <div class="advantage">
+                        <div class="guarantee-container">
+                            <img src="assets/images/guarantee.png" alt="">
+                        </div>
+                        <p class="advantage-text">
+                            Гарантия на работу до 5 лет                            
+                        </p>
+                    </div>
+                    <div class="advantage">
+                        <div class="time-container">
+                            <img src="assets/images/time-management.png" alt="">
+                        </div>
+                        <p class="advantage-text">
+                            Жесткое соблюдение сроков                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <h2 class="form-title">Рассчитайте</br>стоимость ремонта</h2>
+                    <div class="range-slider">
+                        <h3 class="choose-title">Площадь квартиры:</h3>
+                        <input type="range" min="1" max="162" value="68" class="slider" id="square-range">
+                        <p class="square-value"><span id="square-value"></span>м<sup>2</sup></p>
+                    </div>
+                    <div class="type-radio">
+                        <div class="housing">
+                            <h3 class="choose-title">Тип жилья:</h3>
+                            <!--Первая группа радио-->
+                            <div class="radio-group">
+                                <div class="radio-container">
+                                    <label for="second" class="custom-radio">
+                                        <img class="radio-img inactive" src="assets/images/radio-inactive.png" alt="">
+                                        <input class="radio" id="second" type="radio" name="type">
+                                        <div class="aa"></div>
+                                    </label>
+                                    <span>Вторичное</br>жилье</span>
+                                </div>
+                                <div class="radio-container">
+                                    <label for="new" class="custom-radio">
+                                        <img class="radio-img inactive" src="assets/images/radio-inactive.png" alt="">
+                                        <input class="radio" id="new" type="radio" name="type">
+                                        <div class="aa"></div>
+                                    </label>
+                                    <span>Новостройка</span>
+                                </div>
+                                <div class="radio-container">
+                                    <label for="office" class="custom-radio">
+                                        <img class="radio-img inactive" src="assets/images/radio-inactive.png" alt="">
+                                        <input class="radio" id="office" type="radio" name="type">
+                                        <div class="aa"></div>
+                                    </label>
+                                    <span>Офис</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rooms">
+                            <h3 class="choose-title">КОЛ-ВО КОМНАТ:</h3>
+                            <!--Вторая группа радио-->
+                            <div class="radio-group">
+                                <div class="radio-container">
+                                    <label for="1room" class="custom-radio">
+                                        <img class="radio-img inactive" src="assets/images/radio-inactive.png" alt="">
+                                        <input class="radio" id="1room" type="radio" name="rooms">
+                                        <div class="aa"></div>
+                                    </label>
+                                    <span>1</span>
+                                </div>
+                                <div class="radio-container">
+                                    <label for="2room" class="custom-radio">
+                                        <img class="radio-img inactive" src="assets/images/radio-inactive.png" alt="">
+                                        <input class="radio" id="2room" type="radio" name="rooms">
+                                        <div class="aa"></div>
+                                    </label>
+                                    <span>2</span>
+                                </div>
+                                <div class="radio-container">
+                                    <label for="3room" class="custom-radio">
+                                        <img class="radio-img inactive" src="assets/images/radio-inactive.png" alt="">
+                                        <input class="radio" id="3room" type="radio" name="rooms">
+                                        <div class="aa"></div>
+                                    </label>
+                                    <span>3+</span>
+                                </div>
+                                <div class="radio-container">
+                                    <label for="studio" class="custom-radio">
+                                        <img class="radio-img inactive" src="assets/images/radio-inactive.png" alt="">
+                                        <input class="radio" id="studio" type="radio" name="rooms">
+                                        <div class="aa"></div>
+                                    </label>
+                                    <span>Студия</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <button class="button-send">Отправить</button>
+            </div>
+            <div class="scroll">
+                <div class="arrow-container">
+                    <img src="assets/images/arrow.png" alt="">
+                </div>
+                <p class="scroll-text">SCROLL</p>
+            </div>
+        </main>
+        <div class="side-container" id="side-container">
+            <img src="assets/images/side.png" alt="">
+        </div>
+        <div class="empty">
+
+        </div>
+        <footer class="footer">
+            footer
+        </footer>
+    </div>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/prenavbar.js"></script>
+    <script src="scripts/scroll.js"></script>
+</body>
+</html>
